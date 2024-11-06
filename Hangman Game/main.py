@@ -1,15 +1,14 @@
 from display import *
 from art import hangman_art
+from words import wordlist
 import random
-
-words = ("apple", "orange", "coconut", "grapes", "pineapple")
 
 
 
 def main():
     print("\n\nWelcome to Hangman Game!!!\n")
     wrong_guesses = 0
-    answer = random.choice(words)
+    answer = random.choice(wordlist)
     hint = ['_']*len(answer)
     
     is_running = True
