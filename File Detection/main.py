@@ -4,6 +4,7 @@ import os
 
 # Relative path
 file_path  = "File Detection/templates"
+#file_path = "File Detection/text.txt"
 
 if os.path.exists(file_path):
     print(f"The location {file_path} exists.")
